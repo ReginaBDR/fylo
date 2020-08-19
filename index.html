@@ -6,33 +6,24 @@
       name="viewport"
       content="width=device-width, initial-scale=1, shrink-to-fit=no"
     />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="32x32"
-      href="./images/favicon-32x32.png"
-    />
     <title>
-      Fylo landing page
+      My Webpage
     </title>
     <!-- Estilos -->
-    <link
-      rel="stylesheet"
-      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
-      crossorigin="anonymous"
-    /> <!--Bootstrap CDN-->
+    <!--Bootstrap CDN-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
     <!--Google Fonts-->
     <link
       href="https://fonts.googleapis.com/css?family=Open+Sans|Raleway&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="style.css" />
+    <!--CSS-->
+    <link rel="stylesheet" href="./style/style.css" />
   </head>
 
   <body>
-    <header>
-      <nav class="navbar navbar-expand-lg navbar-dark pt-5 pb-3">
+    <header class="header-bg">
+      <nav class="navbar navbar-expand-lg navbar-dark py-3">
         <a class="navbar-brand" href="#">
           <img src="./images/logo.svg" class="img-fluid" alt="logo" />
         </a>
@@ -52,53 +43,51 @@
           id="navbarNavAltMarkup"
         >
           <div class="navbar-nav px-5">
-            <a class="nav-item nav-link active px-4" href="#"
-              >Features <span class="sr-only">(current)</span></a
-            >
-            <a class="nav-item nav-link px-4" href="#">Team</a>
-            <a class="nav-item nav-link px-4" href="#">Sign In</a>
+            <a class="nav-item nav-link active px-4" href="#">Home<span class="sr-only">(current)</span></a>
+            <a class="nav-item nav-link px-4" href="/pricing.html">Pricing</a>
+            <a class="nav-item nav-link px-4" href="/contact.html">Contact</a>
+            <a class="nav-item nav-link px-4" href="/signIn.html">Sign In</a>
           </div>
         </div>
       </nav>
 
       <!--Primera Sección-->
-      <div class="container d-flex justify-content-center pb-5">
-        <div class="col-sm-12 col-md-8 text-center">
-          <div class="row justify-content-center">
-            <img
-              src="./images/illustration-intro.png"
-              class="img-fluid"
-              alt="intro-image-folder"
-            />
-          </div>
-          <div class="row my-4">
-            <h1 class="h1">
+      <div class="container d-flex justify-content-center align-items-center pt-5">
+        <div class="row">
+          <div class="col-md-6 col-sm-10">
+            <div class="row">
+              <img
+                src="./images/illustration-intro.png"
+                class="img-fluid mx-auto pb-3"
+                alt="image of a folder"
+                width="90%"
+              />
+            </div>
+          </div><!--col-->  
+        <div class="col-md-6 col-sm-12 text-center pl-4">
+          <div class="row">
+            <h1 class="h1 title">
               All your files in one secure location, accessible anywhere.
             </h1>
           </div>
-          <div class="row my-4">
-            <h2 class="h5" style="line-height: 2rem">
-              Fylo stores all your most important files in one secure location.
+          <div class="row py-4">
+            <h2 class="h5 subtitle" style="line-height: 2rem">
+              We store all your most important files in one secure location.
               Access them wherever you need, share and collaborate with friends
               family, and co-workers.
             </h2>
           </div>
-          <div class="row my-4 justify-content-center">
-            <button class="btn-lg btn-primary jsScroll" href="#" role="button">Get Started</button>
+          <div class="row">
+            <a class="btn btn-lg btn-primary m-auto shadow" href="/pricing.html" role="button" id="btn-header">Get Started</a>
           </div>
-        </div>
-        <!--col-->
+        </div><!--col-->
       </div>
-      <!--container-->
+      </div><!--container-->
     </header>
 
     <main>
-      <!--
-        Segunda Sección
-      -->
-      <div
-        class="container d-block justify-content-center align-items-center py-5"
-      >
+      <!-- Segunda Sección -->
+      <div class="container d-block justify-content-center align-items-center" id="features">
         <div class="row">
           <div class="col-sm-12 col-md-6 text-center p-5 jsScroll">
             <img
@@ -169,7 +158,6 @@
 
       <!--
           Tercera Sección
-
       -->
       <div class="container d-flex my-5 jsScroll">
         <div class="row align-items-center">
@@ -182,7 +170,7 @@
           />
         </div>
         <div class="col-sm-12 col-md-6">
-          <h4 class="h1 pb-3 font-weight-bold">
+          <h4 class="h1 py-3 font-weight-bold">
             Stay productive,<br />wherever you are
           </h4>
           <p>
@@ -192,8 +180,8 @@
             for live collaboration. No email attachments required.
           </p>
           <span class="d-inline"
-            ><a href="" class="link-s3"
-              >See how Fylo works
+            ><a href="/pricing.html" class="link-s3"
+              >See how it works
               <img src="./images/icon-arrow.svg" alt="new-tab" whidth="30"
             /></a>
           </span>
@@ -209,9 +197,9 @@
       <div class="container" id="card-deck">
         <div class="row mx-auto py-5">
       <div class="card-deck py-5">
-      <div class="card text-white text-left p-3 jsScroll">
+      <div class="card text-white text-left p-3 shadow rounded-lg jsScroll">
     <blockquote class="blockquote mb-0">
-      <p>Fylo has improved our team productivity by an order of magnitude. Since making the switch our team has 
+      <p>It has improved our team productivity by an order of magnitude. Since making the switch our team has 
   become a well-oiled collaboration machine.</p>
       <footer class="blockquote-footer text-white">
         <img src="./images/profile-1.jpg" class="mx-3 float-left" width="40" alt="picture">
@@ -221,9 +209,9 @@
       </footer>
     </blockquote>
   </div>
-  <div class="card text-white text-left p-3 jsScroll">
+  <div class="card text-white text-left p-3 shadow rounded-lg jsScroll">
     <blockquote class="blockquote mb-0">
-      <p>Fylo has improved our team productivity by an order of magnitude. Since making the switch our team has 
+      <p>It has improved our team productivity by an order of magnitude. Since making the switch our team has 
   become a well-oiled collaboration machine.</p>
       <footer class="blockquote-footer text-white">
         <img src="./images/profile-2.jpg" class="mx-3 float-left" width="40" alt="picture">
@@ -233,9 +221,9 @@
       </footer>
     </blockquote>
   </div>
-  <div class="card text-white text-left p-3 jsScroll">
+  <div class="card text-white text-left p-3 shadow rounded-lg jsScroll">
     <blockquote class="blockquote mb-0">
-      <p>Fylo has improved our team productivity by an order of magnitude. Since making the switch our team has 
+      <p>It has improved our team productivity by an order of magnitude. Since making the switch our team has 
   become a well-oiled collaboration machine.</p>
       <footer class="blockquote-footer text-white">
         <img src="./images/profile-3.jpg" class="mx-3 float-left" width="40" alt="picture">
@@ -254,14 +242,14 @@
       <!--
         Suscribe sección
       -->
-      <div class="col-sm-10 col-md-8 mx-auto jsScroll">
-      <div class="container d-flex align-items-center" id="suscribe" style="margin-bottom:-80px">
+      <div class="col-sm-10 col-md-8 m-auto jsScroll">
+       <div class="container d-flex align-items-center shadow" id="suscribe">
         <div class="row text-white justify-content-center">
-        <h4 class="h2 text-center font-weight-bold mb-3">Get early access today</h4>
-        <p class="text-center mb-4 px-5">It only takes a minute to sign up and our free starter tier is extremely generous. If you have any 
+        <h4 class="h2 font-weight-bold mb-3">Get early access today</h4>
+        <p class="text-center mb-4 px-4">It only takes a minute to sign up and our free starter tier is extremely generous. If you have any 
   questions, our support team would be happy to help you.</p>
-        <input type="email" name="email" id="email" class="form-control mb-1" placeholder="email@example.com" required>
-        <button class="btn text-white ml-3 mb-1">Get Started For Free</button>
+        <input type="email" name="email" id="email" class="form-control mb-1 shadow" placeholder="email@example.com" required>
+        <button class="btn text-white ml-3 mb-1 shadow">Get Started For Free</button>
         </div><!--row-->
         </div><!--container-->
       </div><!--col-->
@@ -269,7 +257,7 @@
        <!--
          Footer
         -->
-      <div class="container d-block py-5" style="min-height:80vh">
+      <div class="container d-block py-5">
         <div class="row mb-4">
           <img src="./images/logo.svg" alt="logo-image">
         </div>
@@ -285,17 +273,17 @@
             </div>
             <div class="col-md-2 my-3">
               <ul class="list-unstyled">
-              <li><a href="">About Us</a></li>
-              <li><a href="">Jobs</a></li>
-              <li><a href="">Press</a></li>
-              <li><a href="">Blog</a></li>
+              <li><a href="#features">About Us</a></li>
+              <li><a href="#">Jobs</a></li>
+              <li><a href="#">Press</a></li>
+              <li><a href="#">Blog</a></li>
               </ul>
             </div>
             <div class="col-md-1 my-3">
               <ul class="list-unstyled">
-              <li><a href="">Contact Us</a></li>
-              <li><a href="">Terms</a></li>
-              <li><a href="">Privacy</a></li>
+              <li><a href="/contact.html">Contact</a></li>
+              <li><a href="/pricing.html">Terms</a></li>
+              <li><a href="/pricing.html">Privacy</a></li>
               </ul>
             </div>
             <div class="col-md-2 my-3">
@@ -306,16 +294,10 @@
         </div><!--row-->
       </div><!--container-->
     </footer>
-    <script src="script.js"></script>
-    <script
-      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
-      crossorigin="anonymous"
-    ></script>
+    <script src="js/script.js"></script>
+    <!-- JS, Popper.js, and jQuery -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
   </body>
 </html>

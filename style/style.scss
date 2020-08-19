@@ -1,0 +1,131 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+@import "_footer.scss";
+$card: hsl(219, 30%, 18%);
+$background-page: hsl(218, 28%, 13%);
+$bg-header: hsl(217, 28%, 15%);
+$font-light: hsl(0, 0%, 100%);
+
+@media (max-width: 450px) {
+  .header-bg {
+    min-height: 150vh;
+  }
+  header .img-fluid {
+    width: 70%;
+  }
+  header .title {
+    font-size: 2rem;
+  }
+  header .subtitle {
+    font-size: 1.1rem;
+  }
+  footer button {
+    margin-top: 15px;
+  }
+}
+
+@media (max-width: 800px) {
+  .img-fluid {
+    width: 100%;
+  }
+  .title {
+    font-size: 1.8rem;
+  }
+  .subtitle {
+    font-size: 1rem;
+  }
+  footer button {
+    margin-top: 15px;
+  }
+}
+
+  header {
+    background: $bg-header;
+    color: $font-light;
+    .navbar {
+        background: transparent !important;
+        font-family: "Raleway", sans-serif;
+      }
+      #btn-header {
+        font-size: 1rem;
+        padding: 0.8rem;
+        width: 50%;
+        @include button;
+      }
+  }
+
+.header-bg {
+  background-image: url('../images/bg-curvy-desktop.svg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: bottom;
+    height: 115vh;
+}
+
+h1,
+h4 {
+  font-family: "Raleway", sans-serif;
+  font-weight: bold;
+}
+
+main {
+    background: $background-page;
+    color: $font-light;
+    font-family: "Open Sans", sans-serif;
+    /*Sección 3*/
+  .features {
+    line-height: 1.5rem;
+  }
+  .link-s3 {
+    color: hsl(176, 68%, 64%);
+    text-decoration: underline;
+    transition: color 1s;
+    &:hover {
+        color: hsl(199, 46%, 42%);
+        text-decoration: none;
+      }
+  }
+  /*Sección 4*/
+.card-deck {
+    margin-bottom: 150px;
+    background: url("../images/bg-quotes.png") no-repeat;
+    background-position: left/top;
+    background-size: 55px;
+    .card {
+        background: $card;
+        footer {
+            background: $card;
+          }
+        img {
+          border-radius: 50px;
+        }
+        p {
+            font-size: 0.9rem;
+            padding: 1rem;
+          }  
+      }
+    }
+  #suscribe {
+    margin-bottom:-80px
+  }  
+}
+
+.price-tb {
+  background-color: $bg-header;
+}
+
+/* Animación */
+
+.jsScroll {
+    opacity: 0;
+    transform: translate3d(0, 50px, 0);
+    transition: 1s ease; 
+  }
+.jsScroll.active {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }   

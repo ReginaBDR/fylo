@@ -1,0 +1,38 @@
+@mixin button {
+  background: linear-gradient(to right, hsl(176, 68%, 64%), hsl(198, 60%, 50%));
+  outline: none;
+  border: none;
+  font-weight: bold;
+  border-radius: 50px;
+}
+$bg-header: hsl(217, 28%, 15%);
+$footer-bg: hsl(216, 53%, 9%);
+$font-light: hsl(0, 0%, 100%);
+
+footer {
+    background: $footer-bg;
+    /*Sección suscripción*/
+  #suscribe {
+    position: relative;
+    padding: 3rem;
+    text-align: center;
+    background: $bg-header;
+    border-radius: 10px;
+    top: -100px;
+    margin: 0 auto;
+    input {
+        border-radius: 25px;
+        width: 65%;
+      }
+    .btn {
+        font-size: 0.8rem;
+        padding: 0.7rem;
+        @include button;
+      }  
+  }
+    /*Links del footer*/
+  .list-unstyled a {
+    color: $font-light;
+    text-decoration: none;
+  }  
+}
